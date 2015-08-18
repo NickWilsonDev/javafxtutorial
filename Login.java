@@ -22,8 +22,8 @@ import javafx.stage.Stage;
  * @author Nick Wilson
  * @version 8.17.15
  *
- * This class demonstrates a simple login form window with the 
- * "hello world text".
+ * This class demonstrates a simple login form window that displays a message
+ * when the user clicks a button.
  * Basically copied from 
  * http://docs.oracle.com/javafx/2/get_started/hello_world.html
  * I am just running through their tutorials to get a feel for JavaFX.
@@ -56,7 +56,7 @@ public class Login extends Application {
 
         PasswordField pwBox = new PasswordField();
         grid.add(pwBox, 1, 2);
-////////////////
+
         // Button and text
         Button btn = new Button("Sign in");
         HBox hbBtn = new HBox(10);
