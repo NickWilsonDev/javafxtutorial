@@ -42,7 +42,7 @@ public class Login extends Application {
 
         //add text, labels, and text fields
         Text scenetitle = new Text("Welcome");
-        scenetitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+        scenetitle.setId("welcome-text");
         grid.add(scenetitle, 0, 0, 2, 1);
 
         Label userName = new Label("User Name:");
@@ -65,12 +65,12 @@ public class Login extends Application {
         grid.add(hbBtn, 1, 4);
 
         final Text actiontarget = new Text();
+        actiontarget.setId("actiontarget");
         grid.add(actiontarget, 1, 6);
 
         btn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-                actiontarget.setFill(Color.FIREBRICK);
                 actiontarget.setText("Sign in button pressed");
             }
         });
